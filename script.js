@@ -61,8 +61,8 @@ function getNoteName(midiNumber) {
 }
 
 function playNote(midiNumber) {
-    /*const noteName = getNoteName(midiNumber);
-    document.getElementById('noteDisplay').innerText = 'Playing Note: ' + noteName;*/
+    const noteName = getNoteName(midiNumber);
+    //document.getElementById('noteDisplay').innerText = 'Playing Note: ' + noteName;
 
     // Jouer le fichier MP3
     const audio = new Audio('notesSamples/' + noteName + '.mp3');
